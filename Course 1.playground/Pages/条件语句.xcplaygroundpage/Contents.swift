@@ -1,60 +1,37 @@
 //: [Previous](@previous)
 
-//:整个 switch 语句会在匹配到第一个 switch 情况执行完毕之后退出，不再需要显式的 break 语句
-let someChar = "z"
-switch someChar {
-case "a":
-    print("first char")
-case "z":
-    print("last char")
-default:
-    print("some other char")
+var number = 42
+//: Swift 的 `if` 判断条件不需要加括号，但执行的语句即使只有一行也必须加花括号
+if number > 0 {
+    print("\(number) 是正数")
+} else if number == 0 {
+    print("0")
+} else {
+    print("\(number) 是负数")
 }
 
+//: 条件必须为 `Bool` 类型，使用其他类型作为条件会产生编译错误
+// if number { }
 
-//:区间匹配、复合匹配
-let responseCode = 404
-switch responseCode {
-case 100..<200:
-    print("请求中")
-case 200..<300:
-    print("请求成功")
-case 300..<400:
-    print("重定向")
-case 400..<500:
-    print("客户机中出现的错误")
-case 500, 501, 502, 503:
-    print("服务器中出现的错误")
-default:
-    print("未知")
+/*:
+ 使用比较运算符得到 `Bool` 类型数值
+
+ 数学比较运算符有 `< > <= >= == !=`
+
+ 其他比较运算符还有 `=== !== ~=` 等，之后会介绍
+ */
+
+// 逻辑运算符 && || ! 对 `Bool` 类型值进行变换/组合
+let x = Int.random(in: -10 ... 10)
+let y = Int.random(in: -10 ... 10)
+if x > 0 && y > 0 {
+    print("(\(x), \(y)) 在第一象限")
+}
+if !(x == 0 || y == 0) {
+    print("(\(x), \(y)) 不在坐标轴上")
 }
 
-//:元组匹配
-let onePoint = (1, 1)
-switch onePoint {
-case (_, 0):
-    print("on x-axis")
-case (0, _):
-    print("on y-axis")
-case (-2...2, -2...2):
-    print("inside the box")
-default:
-    print("outside the box")
-}
-
-//:switch 情况可以将匹配到的值临时绑定为一个常量或者变量，来给情况的函数体使用
-//:switch 情况可以使用 where 分句来检查额外的情况
-let anotherPoint = (1, -1)
-switch anotherPoint {
-case let (x, y) where x == y:
-    print("\(x), \(y) on x == y line")
-case let (x, y) where x == -y:
-    print("\(x), \(y) on x == -y line")
-default:
-    print("some arbitrary point")
-}
-
-//:如果你确实需要 C 风格的贯穿行为你可以选择在每个情况末尾使用 fallthrough 关键字 !!不建议
-
+//： 三目运算符 `? :`
+let message = number >= 0 ? "自然数" : "非自然数"
 
 //: [Next](@next)

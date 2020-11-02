@@ -10,8 +10,4 @@ let 类型 = type(of: intNumber)
 var 内存 = MemoryLayout.size(ofValue: intNumber)
 内存 = MemoryLayout<Int>.size
 
-//: 类型检查 (type checking)
-// intNumber = floatNumber
-// intNumber + floatNumber
-
 //: [Next](@next)

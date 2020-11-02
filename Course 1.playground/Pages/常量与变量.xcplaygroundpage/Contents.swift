@@ -12,7 +12,7 @@ anotherVariable = 6.0
 
 let anotherConstant: String
 anotherConstant = "Hello, world!"
-//anotherConstant = "你好"
+// anotherConstant = "你好"
 
 //: 在命名规则内，可使用*几乎所有*有效 Unicode 字符作为常量/变量名
 let π = 3.1415926
@@ -24,10 +24,10 @@ print("\(π) \(你好) \(🐶)")
 // let default = "default"
 let `default` = "default"
 //: - 规则二：**空白字符**、**各类符号**（除下划线）不可用
-//let a←p p+l┌e = "apple"
+// let a←p p+l┌e = "apple"
 let a_p_p_l_e = "apple"
 //: - 规则三：不可以**数字开头**
-//let 12_Pro_Max = "iPhone 12 Pro Max"
-let iPhone_12_Pro_Max = 8_499
+// let 12_Pro_Max = "iPhone 12 Pro Max"
+let iPhone_12_Pro_Max = 8499
 
 //: [Next](@next)

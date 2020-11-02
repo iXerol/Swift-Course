@@ -46,7 +46,7 @@ Swift 的优势：[现代化、安全性、快速](https://developer.apple.com/s
     - 元组、值绑定
     - where 模式匹配
     - break, fallthrough (不建议)
-    - guard
+3. guard
     - 意义：语义清晰、提早退出避免 if 多层嵌套
 
 ##### 循环
