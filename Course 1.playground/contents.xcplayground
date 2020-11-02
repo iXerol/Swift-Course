@@ -4,5 +4,11 @@
         <page name='Hello World'/>
         <page name='常量与变量'/>
         <page name='类型安全'/>
+        <page name='类型强转'/>
+        <page name='元组'/>
+        <page name='区间运算符'/>
+        <page name='溢出运算符'/>
+        <page name='循环语句'/>
+        <page name='条件语句'/>
     </pages>
 </playground>

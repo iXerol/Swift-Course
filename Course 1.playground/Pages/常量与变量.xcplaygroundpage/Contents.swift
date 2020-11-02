@@ -1,4 +1,4 @@
-//: ### 常量与变量
+//: [Previous](@previous)
 
 //: 使用 **`let`** 声明常量，使用 **`var`** 声明变量
 var myVariable = 42
@@ -30,4 +30,4 @@ let a_p_p_l_e = "apple"
 //let 12_Pro_Max = "iPhone 12 Pro Max"
 let iPhone_12_Pro_Max = 8_499
 
-//: [Previous](@previous) | [Next](@next)
+//: [Next](@next)
