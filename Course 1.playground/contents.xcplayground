@@ -15,5 +15,8 @@
         <page name='guard'/>
         <page name='可空类型'/>
         <page name='函数'/>
+        <page name='if let和guard let'/>
+        <page name='可选类型'/>
+        <page name='函数定义'/>
     </pages>
 </playground>
