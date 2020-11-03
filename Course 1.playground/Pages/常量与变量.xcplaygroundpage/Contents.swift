@@ -1,6 +1,7 @@
 //: [Previous](@previous)
 
 //: 使用 **`let`** 声明常量，使用 **`var`** 声明变量
+//: 声明变量未赋值时调用会产生编译错误
 var myVariable = 42
 myVariable = 114514
 let myConstant = 42
@@ -11,6 +12,7 @@ anotherVariable = 5.3
 anotherVariable = 6.0
 
 let anotherConstant: String
+// print(anotherConstant)
 anotherConstant = "Hello, world!"
 // anotherConstant = "你好"
 

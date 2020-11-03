@@ -13,10 +13,10 @@
         <page name='区间运算符'/>
         <page name='switch'/>
         <page name='guard'/>
-        <page name='可空类型'/>
-        <page name='函数'/>
-        <page name='if let和guard let'/>
-        <page name='可选类型'/>
+        <page name='可空类型基础'/>
+        <page name='可空实例绑定'/>
+        <page name='可空类型进阶'/>
         <page name='函数定义'/>
+        <page name='函数进阶'/>
     </pages>
 </playground>
