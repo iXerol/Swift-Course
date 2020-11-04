@@ -1,6 +1,8 @@
 //: [Previous](@previous)
 
 //: 类型检查 (type checking)
+var intNumber = 42
+let floatNumber: Float = 42
 // intNumber = floatNumber
 // intNumber + floatNumber
 
