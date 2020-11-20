@@ -4,7 +4,7 @@
 var intNumber = 42
 let floatNumber: Float = 42
 // intNumber = floatNumber
-// intNumber + floatNumber
+// _ = intNumber + floatNumber
 
 //: 非相同类型无法直接计算 需要转换为相同类型
 //: SomeType(ofInitialValue)
