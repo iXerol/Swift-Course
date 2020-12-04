@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='枚举'/>
+        <page name='字符串'/>
+        <page name='数组'/>
+        <page name='字典'/>
+        <page name='集合'/>
+        <page name='闭包'/>
+        <page name='高阶函数'/>
+    </pages>
+</playground>
