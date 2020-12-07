@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='结构体'/>
+        <page name='类'/>
+        <page name='属性'/>
+        <page name='初始化'/>
+        <page name='值类型与引用类型'/>
+        <page name='内存管理'/>
+    </pages>
+</playground>
