@@ -1,69 +1,80 @@
 //: [Previous](@previous)
 
 //: 无返回值
-func someFunc1() {
+func greet1() {
+    print("Hello World")
 }
-someFunc1()
+greet1()
 
-//: 有返回值
-func someFunc2() -> String {
-    return "some value"
-}
-print(someFunc2())
 
 //: 有参数
-func someFunc3(param: String) -> String {
-    return "some value\(param)"
+func greet2(name: String) {
+    print("Hello \(name)")
 }
-print(someFunc3(param: "abc"))
+greet2(name: "yamaki")
 
-//: 多返回值
-func someFunc4(param: String) -> (value1: String, value2: String) {
-    return (param, "is \(param)")
+//: 参数标签
+func greet3(to name: String) {
+    print("Hello \(name)")
 }
-print(someFunc4(param: "abc"))
-
-//: 可选返回值
-func someFunc5(param: String) -> String? {
-    return nil
-}
-if let value = someFunc5(param: "abc") {
-    print(value)
-}
+greet3(to: "yamaki")
 
 //: 缺省参数
-func someFunc6(param: String, param2: String = "123") -> String? {
-    return param + param2
+func greet4(to name: String = "yamaki") {
+    print("Hello \(name)")
 }
-if let value2 = someFunc6(param: "abc") {
-    print(value2)
-}
-if let value3 = someFunc6(param: "abc", param2: "def") {
-    print(value3)
-}
+greet4()
+greet4(to: "xianglaxia")
 
-//: 实参 在提供形参之前写实参标签，用空格分隔
-//: 如果你为一个形参提供了实参标签，那么就必须在调用函数的时候使用实参标签
-//: 函数标签通常为符合英文语境的介词
-func someFunc7(person: String, from hometown: String) -> String {
-    return "\(person) is come from \(hometown)"
+//: 省略参数名
+func greet5(_ name: String) {
+    //    name = "World"
+    print("Hello \(name)")
 }
-print(someFunc7(person: "lilei", from: "shanghai"))
+greet5("yamaki")
 
-//: 省略实参标签
-func someFunc8(_ param: String) -> String {
-    return param
-}
-print(someFunc8("ignore param"))
-
-//: 可变参数  一个函数最多只能有一个可变形式参数
-func someFunc9(_ params: String...) -> String {
-    var value: String = ""
-    for param in params {
-        value = value + param
+//: 多参数，有返回值，提前退出
+func greet6(name: String, to toName: String) -> Bool {
+//    if (name.isEmpty || toName.isEmpty) {
+//        return false
+//    }
+    guard !name.isEmpty, !toName.isEmpty else {
+        return false
     }
-    return value
+    print("\(name): Hello \(toName)")
+    return true
 }
-print(someFunc9("a", "b", "c", "d", "e", "f", "g", "h"))
+var result = greet6(name: "yamaki", to: "")
+result = greet6(name: "yamaki", to: "xianglaxia")
 
-//: [Next](@next)
+//: 无返回值实际是省略了 `-> ()` 或 `-> Void`
+func greet7(_ fromName: String = "yamaki", to toName: String) -> () {
+    print("\(fromName): Hello \(toName)")
+}
+greet7(to: "xianglaxia")
+greet7("yamaki", to: "xianglaxia")
+
+//: 变长参数
+func greet8(from fromName: String, to toNames: String ...) -> (total: Int, success: Int) {
+    guard !fromName.isEmpty, !toNames.isEmpty else {
+        return (toNames.count, 0)
+    }
+    var count = 0
+    for name in toNames {
+        guard !name.isEmpty else { continue }
+        print("\(fromName): Hello \(name)")
+        count += 1
+    }
+    return (toNames.count, count)
+}
+var (total, success) = greet8(from: "yamaki", to: "xianglaxia", "", "Snorlax", "", "Swift")
+print("\(total) \(success)")
+
+//： `inout` 参数
+func mySwap(_ a: inout Int, _ b: inout Int) {
+    let c = a
+    a = b
+    b = c
+}
+mySwap(&total, &success)
+print("\(total) \(success)")
