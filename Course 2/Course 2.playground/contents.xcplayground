@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='枚举'/>
+        <page name='1.1 枚举'/>
+        <page name='1.2 原始值枚举'/>
+        <page name='1.3 关联值枚举'/>
+        <page name='1.4 递归枚举'/>
+        <page name='1.5 Objective-C 枚举'/>
         <page name='字符串'/>
         <page name='数组'/>
         <page name='字典'/>
         <page name='集合'/>
         <page name='闭包'/>
         <page name='高阶函数'/>
+        <page name='函数进阶'/>
     </pages>
 </playground>
