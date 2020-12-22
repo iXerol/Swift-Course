@@ -8,6 +8,7 @@ import Foundation
 //: [Grouping Related Objective-C Constants](https://developer.apple.com/documentation/swift/objective-c_and_c_code_customization/grouping_related_objective-c_constants)
 
 //: 若需要在 Objective-C 中使用 Swift 枚举，则必须加上 `objc` 修饰符，并且拥有整型原始值
+
 //: 在 Objective-C 中使用 `NS_ENUM` `NS_CLOSED_ENUM` 生成的枚举也会被自动转换成这种形式
 @objc
 enum PlaybackState: Int {
@@ -22,17 +23,18 @@ enum PlaybackState: Int {
 //: [SE-0192](https://github.com/apple/swift-evolution/blob/master/proposals/0192-non-exhaustive-enums.md)
 
 //: 在 Objective-C 中，使用 `NS_OPTIONS` 生成的选项也是枚举
+
 //: 在 Swift 中，这些选项将被转换为符合 `OptionSet` 协议的结构体
 //: 如 `UIControlEvents` `UIViewAnimationOptions`
 struct AudioChannels: OptionSet {
     let rawValue: Int
 
-    //: 可以与 Objective-C 中一样，使用 bitmask 编码
+//: 可以与 Objective-C 中一样，使用 bitmask 编码
     static let mono         = AudioChannels(rawValue: 1 << 0)
     static let stereo       = AudioChannels(rawValue: 1 << 1)
     static let multiChannel = AudioChannels(rawValue: 1 << 2)
 
-    // 虽然依然使用 bitmask 编码，但使用数组的形式表现，让选项更易读
+//: 虽然依然使用 bitmask 编码，但使用数组的形式表现，让选项更易读
     static let monoAndStereo: AudioChannels = [.mono, .stereo]
     static let all: AudioChannels = [.mono, .stereo, .multiChannel]
 }

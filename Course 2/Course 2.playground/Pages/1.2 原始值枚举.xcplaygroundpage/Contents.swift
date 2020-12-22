@@ -21,12 +21,14 @@ state = .stopped
 print("\(state) \(state.rawValue)")
 
 //: 也可以使用原始值初始化枚举值
+
 //: 由于枚举不一定包含该原始值，因此可能失败，返回空值
 let preparingState = PlaybackState(rawValue: 1)
 let nilState = PlaybackState(rawValue: 7)
 print("\(preparingState) \(nilState)")
 
 //: 除任意整型之外，原始值还可以为 String, Character 以及任意浮点型
+
 //: 原始值为 `String` 时，枚举值自动推断为成员名
 enum ProgrammingLanguage: String {
     case swift

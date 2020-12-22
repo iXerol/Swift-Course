@@ -11,14 +11,14 @@ enum Shape {
     // 点没有关联值
     case point
 
-    //: 枚举可添加方法，语法与函数相同
+//: 枚举可添加方法，语法与函数相同
     func area() -> Double {
-        //: 使用 `self` 表示自身的值
+//: 使用 `self` 表示自身的值
         switch self {
-        //: 使用 `let` 将枚举关联值值绑定到临时常量上
+//: 使用 `let` 将枚举关联值值绑定到临时常量上
         case .square(let side):
             return side * side
-        //: 值绑定 `let` 的位置可在关联值前也可在枚举值前，元组标签可以省略。以下三种写法等价
+//: 值绑定 `let` 的位置可在关联值前也可在枚举值前，元组标签可以省略。以下三种写法等价
 //        case .rectangle(let w, let h):
 //        case let .rectangle(w, h):
         case let .rectangle(width: w, height: h):

@@ -1,6 +1,6 @@
 //: ## 1 枚举
 
-//： ### 1.1 枚举基本语法
+//: ### 1.1 枚举基本语法
 
 enum Direction {
     case east
@@ -37,6 +37,7 @@ case .south:
 //: 已覆盖所有可能的枚举值时不需要 `default`
 
 //: 使用 `: CaseIterable` 声明可迭代的枚举可以使用 `allCases` 属性访问所有可能的选项
+
 //: `CaseIterable` 是一种协议，协议相关内容会在第四课详细介绍
 enum IterableDirection: CaseIterable {
     case east, west
