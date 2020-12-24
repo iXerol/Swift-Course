@@ -1,7 +1,7 @@
 //: [Previous](@previous)
-
+//#-hidden-code
 import Foundation
-
+//#-end-hidden-code
 //: ### 1.5 Objective-C 互操作
 //: 本章主要讲的是一些在 Objective-C 中的枚举或形似枚举的成组常量在 Swift 中的使用
 //: # ‼️本章节涉及较多「超纲」内容，建议在需要用到的时候回头看

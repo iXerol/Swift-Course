@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+//#-hidden-code
+import Foundation
+//#-end-hidden-code
 //: ## 2 字符串
 
 //: ### 2.1 字符串基本语法
@@ -35,6 +37,8 @@ print(notSpecialString)
 //: `\u{n}` ，*n* 为1~8位十六进制数，表示相应码位的 Unicode 标量
 let unicodeString = "\u{1F469}\u{1F3FB}\u{200D}\u{1F4BB}"
 print("\(unicodeString) \(unicodeString.count)") // 👩🏻‍💻 1
-//: #### 输入了四个 Unicode 码位，为什么字符串长度为 1？
+let unicodeNSString = unicodeString as NSString
+print("\(unicodeNSString) \(unicodeNSString.length)") // 👩🏻‍💻 7
+//: #### 小问题：输入了四个 Unicode 码位，为什么 `String` 字符串长度为 1，`NSString` 字符串长度为 7？
 
 //: [Next](@next)
