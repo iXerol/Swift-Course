@@ -10,7 +10,8 @@
         <page name='2.2 字符串修改'/>
         <page name='2.3 字符串遍历'/>
         <page name='2.4 字符串与 Unicode'/>
-        <page name='数组'/>
+        <page name='2.5 字符串常用方法'/>
+        <page name='3.1 数组'/>
         <page name='字典'/>
         <page name='集合'/>
         <page name='闭包'/>

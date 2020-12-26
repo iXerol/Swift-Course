@@ -1,5 +1,7 @@
 //: [Previous](@previous)
 
+//: ### 2.2 字符串修改
+
 //： 使用 `var` 声明可变字符串，`let` 声明的字符串不可修改
 let constString = "Swift Course"
 var variableString = "Swift Course"

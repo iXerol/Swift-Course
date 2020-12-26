@@ -1,6 +1,9 @@
 //: [Previous](@previous)
-
+//#-hidden-code
 import Foundation
+//#-end-hidden-code
+
+//: ### 2.4 Unicode
 
 //: 回到之前的小问题：为什么同样的字符串内容，`String`和`NSString`的长度不同？为什么`String``需要使用`Index`而不使用数值作为下标？
 
