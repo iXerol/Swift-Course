@@ -7,15 +7,17 @@
         <page name='1.4 递归枚举'/>
         <page name='1.5* Objective-C 枚举'/>
         <page name='2.1 字符串'/>
-        <page name='2.2 字符串修改'/>
+        <page name='2.2 访问与修改字符串'/>
         <page name='2.3 字符串遍历'/>
         <page name='2.4 字符串与 Unicode'/>
         <page name='2.5 字符串常用方法'/>
         <page name='3.1 数组'/>
-        <page name='字典'/>
-        <page name='集合'/>
-        <page name='闭包'/>
-        <page name='高阶函数'/>
-        <page name='函数进阶'/>
+        <page name='3.2 修改及遍历数组'/>
+        <page name='4.1 字典'/>
+        <page name='4.2 修改及遍历字典'/>
+        <page name='5.1 集合'/>
+        <page name='6.1 闭包'/>
+        <page name='6.3 函数进阶'/>
+        <page name='6.4 高阶函数'/>
     </pages>
 </playground>
