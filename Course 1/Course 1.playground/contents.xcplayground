@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='Hello World'/>
-        <page name='常量与变量'/>
-        <page name='类型安全'/>
-        <page name='类型检查与转换'/>
-        <page name='溢出运算符'/>
-        <page name='元组'/>
-        <page name='条件语句'/>
-        <page name='for-in 循环'/>
-        <page name='while 循环'/>
-        <page name='区间运算符'/>
-        <page name='switch'/>
-        <page name='guard'/>
-        <page name='可空类型基础'/>
-        <page name='可空实例绑定'/>
-        <page name='可空类型进阶'/>
-        <page name='函数定义'/>
+        <page name='0 Hello World'/>
+        <page name='1.1 常量与变量'/>
+        <page name='1.2 类型推断与注解'/>
+        <page name='1.3 类型检查与转换'/>
+        <page name='1.4 溢出运算符'/>
+        <page name='1.5 元组'/>
+        <page name='2.1 条件语句'/>
+        <page name='2.2 for-in 循环'/>
+        <page name='2.3 while 循环'/>
+        <page name='2.4 区间运算符'/>
+        <page name='3.1 switch'/>
+        <page name='3.2 guard'/>
+        <page name='4.1 可空类型基础'/>
+        <page name='4.2 可空实例绑定'/>
+        <page name='4.3 可空类型进阶'/>
+        <page name='5 函数定义'/>
         <page name='课后习题'/>
     </pages>
 </playground>

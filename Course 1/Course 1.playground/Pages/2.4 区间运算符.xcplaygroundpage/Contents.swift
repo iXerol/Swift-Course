@@ -1,5 +1,7 @@
 //: [Previous](@previous)
 
+//: ### 2.4 区间运算符
+
 //: `...` 表示包含首尾元素闭区间，首尾元素类型必须相同、首元素不可大于尾元素
 for index in 1 ... 5 {
     print("\(index) 乘 5 等于 \(index * 5)")
@@ -34,7 +36,7 @@ let range = ...5
 range ~= 5
 range ~= 0
 range ~= 6
-//: ~=运算符与 contains 等价，即判断区间是否包含特定元素
+//: `~=`运算符与 `contains` 等价，即判断区间是否包含特定元素
 range.contains(-1)
 
 //: [Next](@next)

@@ -1,5 +1,7 @@
 //: [Previous](@previous)
 
+//: ### 2.3 `while` 循环
+
 //: `while` 循环用于在条件为真时执行循环体内代码
 var index = 0
 while index < 10 {

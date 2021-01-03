@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
-//: 可空链式调用
-//: 使用可空字符串生成全大写的新字符串，需要在链式调用的点语法前添加问号（`?`）
+//: #### 可空链式调用
+//: 使用可空字符串生成全大写的新字符串，需要在链式调用的点语法前添加问号（`?`）。
 var optionalString: String? = "bilibili"
 let upCaseString = optionalString?.uppercased()
 //: 也可以通过可空链式调用在原地修改自身的值
@@ -18,10 +18,10 @@ print(myString?.uppercased() as Any)
 myString = "Hello, Swift!"
 print(myString as Any)
 print(myString.uppercased())
-//: ⚠️隐式解包与强制解包一样不安全，必须由使用方确保其值非空
-//: 在与 Objective-C 桥接时，未声明 `nonnull`/`nullable` 的对象会被转换为隐式解包类型
+//: ⚠️隐式解包与强制解包一样不安全，必须由使用方确保其值非空。
+//: 在与 Objective-C 桥接时，未声明 `nonnull`/`nullable` 的对象会被转换为隐式解包类型。
 
-//: 一个常见的可空类型操作：有值时取值，无值时赋默认值
+//: 一个常见的可空类型操作：有值时取值，无值时赋默认值。
 //: 当然可使用可空实例绑定完成
 var nonnullString: String
 if let str = optionalString {

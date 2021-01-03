@@ -1,5 +1,7 @@
 //: [Previous](@previous)
 
+//: ### 1.5 元组
+
 //: 使用元组组合多个元素，元素可以为不同类型
 let netError = (404, "not found")
 

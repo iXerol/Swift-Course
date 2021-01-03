@@ -16,8 +16,9 @@ public class WeChatSDK {
     /// - Parameter title: 分享的标题。不得为空字符串，空字符串必定分享失败
     /// - Parameter desc: 分享的内容。不能与 url 同时为空
     /// - Parameter url: 分享的链接。不能与 desc 同时为空
-    public static func share(title: String, desc: String?, url: URL?) -> Bool {
+    public static func share(title: String, desc: String?, url: URL?, from: String) -> Bool {
         guard !title.isEmpty,
+              !from.isEmpty,
               ![desc, url?.absoluteString].compactMap({ $0 }).joined().isEmpty else {
             print("empty")
             return false

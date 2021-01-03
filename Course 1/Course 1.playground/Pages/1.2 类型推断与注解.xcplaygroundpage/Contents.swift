@@ -1,12 +1,14 @@
 //: [Previous](@previous)
 
-//: 类型注解 (type annotation)
+//: ### 1.2 类型推断与注解
+
+//: #### 类型注解 (type annotation)
 var intNumber = 42
 let floatNumber: Float = 42
 let doubleNumber: Double = 42
 let uint8Number: UInt8 = 42
 
-//: 类型推断 (type inference)
+//: #### 类型推断 (type inference)
 
 let doubleSum = 42 + 42.0
 let 类型 = type(of: intNumber)
