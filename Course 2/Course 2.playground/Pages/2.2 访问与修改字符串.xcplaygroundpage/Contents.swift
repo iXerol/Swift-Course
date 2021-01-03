@@ -2,11 +2,11 @@
 
 //: ### 2.2 访问与修改字符串
 
-//： 使用 `var` 声明可变字符串，`let` 声明的字符串不可修改
+//： 使用`var`声明可变字符串，`let`声明的字符串不可修改
 let constString = "Swift Course"
 var variableString = "Swift Course"
 
-//: 使用 `+=` 运算符或 `append(_:)` 方法在尾部添加字符
+//: 使用`+=`运算符或`append(_:)`方法在尾部添加字符
 variableString += " is great"
 variableString.append("!")
 print(variableString)

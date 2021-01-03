@@ -8,7 +8,7 @@ print(str.isEmpty)
 str.append("0")
 print(str.isEmpty)
 
-//: `contains(+:) 包含字符`
+//: `contains(_:) 包含字符`
 str = "bilibili"
 print(str.contains("b"), str.contains("a"))
 

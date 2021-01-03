@@ -16,8 +16,10 @@
         <page name='4.1 字典'/>
         <page name='4.2 修改及遍历字典'/>
         <page name='5.1 集合'/>
-        <page name='6.1 闭包'/>
-        <page name='6.3 函数进阶'/>
+        <page name='5.2 集合常用方法'/>
+        <page name='5.3 Objective-C中的容器类型'/>
+        <page name='6.1 函数类型'/>
+        <page name='6.2 闭包语法'/>
         <page name='6.4 高阶函数'/>
     </pages>
 </playground>
