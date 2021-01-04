@@ -2,7 +2,6 @@
 //#-hidden-code
 import Foundation
 //#-end-hidden-code
-
 /*:
 ## 课后习题 实现UGC内容简易分享
 

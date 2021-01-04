@@ -1,4 +1,5 @@
 //: [Previous](@previous)
+//: ### 5 函数定义
 
 //: #### 无返回值
 /// `- (void)greet1`
@@ -73,7 +74,7 @@ func greet8(from fromName: String, to toNames: String ...) -> (total: Int, succe
     }
     var count = 0
     for name in toNames {
-        guard !checkName(name) else { continue }
+        guard checkName(name) else { continue }
         print("\(fromName): Hello \(name)")
         count += 1
     }

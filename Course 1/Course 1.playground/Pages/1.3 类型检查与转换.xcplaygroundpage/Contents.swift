@@ -1,5 +1,4 @@
 //: [Previous](@previous)
-
 //: ### 1.3 类型检查与转换
 
 //: #### 类型检查 (type checking)
@@ -9,7 +8,6 @@ let floatNumber: Float = 42
 // _ = intNumber + floatNumber
 
 //: #### 类型转换 (type casting)
-
 //: 非相同类型无法直接计算 需要转换为相同类型。
 //: `SomeType(ofInitialValue)`
 let first = 3

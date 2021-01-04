@@ -1,4 +1,5 @@
 //: [Previous](@previous)
+//: ### 3.2 `guard`
 
 let names: [(String, String)] =
     [("Tim", "Cook"),

@@ -1,5 +1,4 @@
 //: [Previous](@previous)
-
 //: ### 3.1 `switch`
 
 //: 整个 `switch` 语句会在匹配到第一个 `switch` 情况执行完毕之后退出，不再需要显式的 `break` 语句
