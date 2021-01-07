@@ -20,6 +20,7 @@
         <page name='5.3 Objective-C中的容器类型'/>
         <page name='6.1 函数类型'/>
         <page name='6.2 闭包语法'/>
+        <page name='6.3 闭包进阶'/>
         <page name='6.4 高阶函数'/>
     </pages>
 </playground>

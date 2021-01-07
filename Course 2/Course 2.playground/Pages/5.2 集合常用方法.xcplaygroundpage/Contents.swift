@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 let vegetables: Set = ["Onions", "Carrots", "Tamatoes"]
 let fruits: Set = ["Apples", "Bananas", "Tamatoes"]
 

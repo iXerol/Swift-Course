@@ -1,4 +1,9 @@
 //: [Previous](@previous)
+//#-hidden-code
+import UIKit
+import SwiftUI
+import PlaygroundSupport
+//#-end-hidden-code
 
 var arr = [2233, 22, 33, 12345, 0, -22, -33]
 
@@ -26,5 +31,23 @@ arr.sort(by: { $0 < $1 })
 
 //: 尾随闭包（trailing closure）语法，最后一个参数如果是闭包可省略参数标签，直接将闭包跟随在函数之后
 arr.sort { $0 < $1 }
+
+//: 多重尾随闭包（from Swift 5.3）
+UIView.animate(withDuration: 1) {
+    // animate
+} completion: { (complete) in
+    // completion
+}
+
+let view = Button {
+    // action
+} label: {
+    // label
+    Circle()
+}.onLongPressGesture { pressing in
+    // pressing
+} perform: {
+    // perform
+}
 
 //: [Next](@next)
