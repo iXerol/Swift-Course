@@ -211,7 +211,6 @@ Swift 的优势：[现代化、安全性、快速](https://developer.apple.com/s
 5. 属性观察者
     - willSet 参数名、默认参数名 newValue
     - didSet 参数名、默认参数名 oldValue
-6. 属性包装（property wrapper）
 
 #### 初始化 init
 

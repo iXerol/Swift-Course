@@ -1,10 +1,13 @@
+//: [Previous](@previous)
+//#-hidden-code
 import Foundation
+//#-end-hidden-code
 
-//: ## 结构体
+//: ### 1.2 类
 
-//: 创建一个描述我站用户的结构体
-struct User {
-    /// 用户 ID
+//: 创建一个描述B站用户的类
+class User {
+    /// 用户ID
     let mid = 2233
     /// 入站时间戳
     let jointime: TimeInterval = 1_333_333_333
@@ -23,14 +26,16 @@ struct User {
               terminator: "\n\n")
     }
 
-//: 修改属性值的方法需添加 `mutating` 关键字
-    mutating func changeName(to name: String) {
+//: 与结构体不同，修改属性值的方法**不**需添加 `mutating` 关键字
+    func changeName(to name: String) {
+//: 属性与临时常量/变量同名时加上`self.`表示属性
         self.name = name
     }
 }
 //: 四个属性，ID与入站时间戳不可变，用户名、头像可变
 
-var user = User()
+//: 使用`let`声明的类的常量实例也可以修改可变属性
+let user = User()
 
 //: 点语法获取属性
 print("ID：\(user.mid)",
@@ -44,14 +49,10 @@ print("ID：\(user.mid)",
 user.printDespriction()
 
 //: 修改属性值
+user.changeName(to: "哔哩哔哩")
 user.face = "2233.png"
 //: 常量属性不可修改
 //user.mid = 222333
 user.printDespriction()
-
-//: 调用 `mutating` 方法修改属性值
-user.changeName(to: "哔哩哔哩")
-user.printDespriction()
-
 
 //: [Next](@next)
