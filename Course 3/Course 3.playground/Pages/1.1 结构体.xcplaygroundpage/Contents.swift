@@ -9,7 +9,7 @@ struct VideoInfo {
     let avid = 54737593
     /// BV号（生成BVID算法可能改变）
     var bvid = "BV1f4411M7QC"
-    /// UP主ID（可能为联合投稿）
+    /// UP主ID（可能为联合投稿，因此为数组）
     var upers = [163637592]
     /// 标题
     var title = "【何同学】有多快？5G在日常使用中的真实体验"

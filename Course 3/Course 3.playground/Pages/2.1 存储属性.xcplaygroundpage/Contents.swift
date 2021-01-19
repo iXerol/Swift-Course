@@ -20,6 +20,6 @@ struct Polygon {
 
 var hexagon = Polygon(sides: [1, 2, 3, 3, 2, 1])
 hexagon.backgroundColor = .shadow
-print(hexagon.numberOfSides)
+hexagon.numberOfSides
 
 //: [Next](@next)

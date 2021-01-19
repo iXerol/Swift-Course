@@ -36,6 +36,7 @@ class Square: Rectangle {
 }
 let square = Square()
 square.changeWidth(to: 20)
-print(square.width, square.height)
+square.width
+square.height
 
 //: [Next](@next)

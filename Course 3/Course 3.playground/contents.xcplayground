@@ -14,9 +14,9 @@
         <page name='3.2 类的初始化'/>
         <page name='3.3 可失败初始化'/>
         <page name='4.1 值语义与引用语义'/>
-        <page name='4.2 值类型与引用类型'/>
-        <page name='4.3 相等与同一'/>
-        <page name='4.4 复制'/>
+        <page name='4.2 值类型与引用类型常量'/>
+        <page name='4.3 拷贝'/>
+        <page name='4.4 相等与同一'/>
         <page name='4.5 写时复制'/>
         <page name='5.1 内存管理'/>
         <page name='5.2 引用计数'/>

@@ -33,7 +33,8 @@ public class Rectangle {
 
 let rect = Rectangle()
 rect.changeWidth(to: 20)
-print(rect.width, rect.height)
+rect.width
+rect.height
 
 public class Square: Rectangle {
     internal var sideLength: Int { width }
@@ -53,6 +54,7 @@ public class Square: Rectangle {
 
 let square = Square()
 square.changeWidth(to: 20)
-print(square.width, square.height)
+square.width
+square.height
 
 //: [Next](@next)
