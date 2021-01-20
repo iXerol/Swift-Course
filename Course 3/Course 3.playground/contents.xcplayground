@@ -18,9 +18,9 @@
         <page name='4.3 拷贝'/>
         <page name='4.4 相等与同一'/>
         <page name='4.5 写时复制'/>
-        <page name='5.1 内存管理'/>
-        <page name='5.2 引用计数'/>
-        <page name='5.3 weak'/>
+        <page name='5.1 内存管理与引用计数'/>
+        <page name='5.2 循环引用与weak'/>
+        <page name='5.3 闭包中的循环引用'/>
         <page name='5.4 逃逸闭包'/>
     </pages>
 </playground>
