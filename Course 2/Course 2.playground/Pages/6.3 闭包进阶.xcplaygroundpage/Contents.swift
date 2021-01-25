@@ -3,6 +3,7 @@
 import CoreGraphics
 //#-end-hidden-code
 
+//#-editable-code
 //: ### 6.3 闭包进阶
 
 //: #### 闭包作为函数返回值
@@ -78,5 +79,6 @@ let anotherGrowBy = growBy
 anotherGrowBy(100)
 anotherGrowBy(100)
 //: 点击上方`growBy`函数体右边的展示图标，可以发现函数体被调用了4次，其中两次来自`anotherGrowBy`。
+//#-end-editable-code
 
 //: [Next](@next)

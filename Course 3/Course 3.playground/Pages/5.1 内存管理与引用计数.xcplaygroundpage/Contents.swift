@@ -3,6 +3,7 @@
 import CoreFoundation
 //#-end-hidden-code
 
+//#-editable-code
 //: ## 5 内存管理
 
 //: ### 5.1 内存管理与引用计数
@@ -16,7 +17,7 @@ class C {
     }
 }
 //: `CFGetRetainCount(_:)`可以获取引用计数的值，但由于函数传参会增加一次引用，会导致取到的引用计数比实际多1
-//: `isKnownUniquelyReferenced(:)`可以得知变量是否为实例的唯一引用
+//: `isKnownUniquelyReferenced(_:)`可以得知变量是否为实例的唯一引用
 var c1: C? = C()
 print(CFGetRetainCount(c1))
 print(isKnownUniquelyReferenced(&c1))
@@ -30,5 +31,6 @@ c1 = nil
 //print(CFGetRetainCount(c1))
 print(isKnownUniquelyReferenced(&c1))
 print("end")
+//#-end-editable-code
 
 //: [Next](@next)

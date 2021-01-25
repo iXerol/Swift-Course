@@ -5,6 +5,7 @@ import SwiftUI
 import PlaygroundSupport
 //#-end-hidden-code
 
+//#-editable-code
 var arr = [2233, 22, 33, 12345, 0, -22, -33]
 
 //: ### 6.2 闭包语法
@@ -49,5 +50,6 @@ let view = Button {
 } perform: {
     // perform
 }
+//#-end-editable-code
 
 //: [Next](@next)

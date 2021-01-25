@@ -3,6 +3,7 @@
 import Foundation
 //#-end-hidden-code
 
+//#-editable-code
 //: ## 4 值类型与引用类型
 
 //: ### 4.1 值语义与引用语义
@@ -20,5 +21,6 @@ var nsstr2 = nsstr1
 nsstr2.append("干杯")
 nsstr1
 nsstr2
+//#-end-editable-code
 
 //: [Next](@next)

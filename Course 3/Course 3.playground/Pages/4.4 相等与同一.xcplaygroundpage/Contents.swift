@@ -16,6 +16,7 @@ class ReferenceInt: CustomStringConvertible {
 }
 //#-end-hidden-code
 
+//#-editable-code
 //: `===`同一运算符用于判断两个引用类型是否指向同一实例，相对应的`!==`不同运算符判断是否指向不同实例。
 
 //: 引用类型均可通过`===`或`!==`运算符判断指向，即使运算符两端类型不同。
@@ -43,5 +44,6 @@ let b = IntWrapper(1)
 //a === b
 //: 值类型也需要实现`==`方法才能使用`==`运算符判等
 //a == b
+//#-end-editable-code
 
 //: [Next](@next)

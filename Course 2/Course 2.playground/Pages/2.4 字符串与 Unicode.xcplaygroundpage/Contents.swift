@@ -3,6 +3,7 @@
 import Foundation
 //#-end-hidden-code
 
+//#-editable-code
 //: ### 2.4 Unicode
 
 //: 回到之前的小问题：为什么同样的字符串内容，`String`和`NSString`的长度不同？为什么`String`需要使用`Index`而不使用数值作为下标？
@@ -37,5 +38,6 @@ for scalar in unicodeString.unicodeScalars {
 //: 综上所述，在Unicode中一个字符可以由多个Unicode标量组成，一个Unicode标量所需要的基本编码单元数量又是不一定的。Swift对Unicode的这两项特性做了完整的兼容，这也导致了Swift中每个字符所占用的内存不等，无法使用字符位置在O(1)时间内得到对应字符。而且仅依靠数值也无法简单使用数值表示具体的意义（表示第几个字符？还是第几个Unicode标量？或是第几个UTF-8基本单元？），因此Swift也使用[`UTF8View`](https://developer.apple.com/documentation/swift/unicode/scalar/utf8view)、[`UTF16View`](https://developer.apple.com/documentation/swift/unicode/scalar/utf16view)类型来分别表示对应编码下的表现形式，使开发者也可以使用使用数值索引访问UTF-8、UTF-16编码下对应位置的值。
 
 //: References: [`String`文档](https://developer.apple.com/documentation/swift/string)，[Swift Language Guide字符串章节](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)，[Unicode文档](https://www.unicode.org/versions/Unicode10.0.0/ch03.pdf)
+//#-end-editable-code
 
 //: [Next](@next)

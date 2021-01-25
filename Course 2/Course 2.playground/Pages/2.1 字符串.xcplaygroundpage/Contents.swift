@@ -2,6 +2,8 @@
 //#-hidden-code
 import Foundation
 //#-end-hidden-code
+
+//#-editable-code
 //: ## 2 字符串
 
 //: ### 2.1 字符串基本语法
@@ -40,5 +42,6 @@ print("\(unicodeString) \(unicodeString.count)") // 👩🏻‍💻 1
 let unicodeNSString = unicodeString as NSString
 print("\(unicodeNSString) \(unicodeNSString.length)") // 👩🏻‍💻 7
 //: #### 小问题：输入了四个Unicode码位，为什么`String`字符串长度为1，`NSString`字符串长度为 7？
+//#-end-editable-code
 
 //: [Next](@next)

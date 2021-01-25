@@ -3,6 +3,7 @@
 import Foundation
 //#-end-hidden-code
 
+//#-editable-code
 //: ### 1.2 类
 
 //: 创建一个描述B站用户的类
@@ -54,5 +55,6 @@ user.face = "2233.png"
 //: 常量属性不可修改
 //user.mid = 222333
 user.printDespriction()
+//#-end-editable-code
 
 //: [Next](@next)

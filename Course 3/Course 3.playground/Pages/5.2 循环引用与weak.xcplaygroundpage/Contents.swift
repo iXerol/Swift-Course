@@ -4,8 +4,8 @@
 
 //: 采用引用计数来管理内存一定会遇到一个问题：循环引用导致的内存泄漏
 class A {
-//    var b: B?
-    weak var b: B?
+    var b: B?
+//    weak var b: B?
 
     deinit {
         print("A released")

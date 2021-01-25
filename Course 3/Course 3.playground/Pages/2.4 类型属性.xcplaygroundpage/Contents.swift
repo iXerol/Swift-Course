@@ -14,7 +14,7 @@ let rect = Rect.zero
 
 class Player { }
 class PlayerFocusManager {
-    var focusPlayer: Player
+    var focusPlayer: Player?
 //: 对于所有的全局变量，都会在底层使⽤类似`dispatch_once`的⽅式来确保只初始化⼀次，因此可以直接使用`static let`声明单例。
     static let shared = PlayerFocusManager()
 }
