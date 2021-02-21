@@ -31,7 +31,7 @@ class Square: Rectangle {
     override func changeHeight(to height: Int) {
 //: 使用`super`执行父类方法
         super.changeHeight(to: height)
-        self.height = height
+        self.width = height
     }
 }
 let square = Square()
