@@ -24,7 +24,7 @@ class Bird {
 }
 
 class Ostrich: Bird {
-//: 使用`class`关键字声明的类型方法可重写
+//: 使用`class`关键字声明的类的类型方法可重写
     override class func canFly() -> Bool {
         return false
     }
