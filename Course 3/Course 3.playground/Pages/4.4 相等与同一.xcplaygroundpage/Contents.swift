@@ -44,6 +44,19 @@ let b = IntWrapper(1)
 //a === b
 //: 值类型也需要实现`==`方法才能使用`==`运算符判等
 //a == b
+
+//: 继承自NSObject的对象，会自动将`==`运算符转发到`isEqual(_:)`
+class Obj: NSObject {
+    override func isEqual(_ object: Any?) -> Bool {
+        print("2233")
+        return true
+    }
+}
+
+let obj1 = Obj()
+let obj2 = Obj()
+obj1 == obj2
+
 //#-end-editable-code
 
 //: [Next](@next)
