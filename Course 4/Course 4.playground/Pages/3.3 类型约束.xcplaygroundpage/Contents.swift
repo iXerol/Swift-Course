@@ -3,9 +3,9 @@
 //: ### 3.3 类型约束
 
 //: 对所有数值类型添加求和方法
-//func sum<T>(of items: T...) -> T {
-//    return items.reduce(.zero, +)
-//}
+func sum<T>(of items: T...) -> T {
+    return items.reduce(.zero, +)
+}
 
 //: 以上代码无法通过编译，因为以上方法对所有类型都生效，但并不是所有类型都能能使用加法。
 //: 因此把能作为函数参数的类型，限定在符合`AdditiveArithmetic`的范围内。
