@@ -28,9 +28,8 @@ class Session: NSObject {
     }
 }
 
-//: Swift类也可以符合声明为`@objc`的协议
+//: 未声明`@objc`的Swift类也可以符合声明`@objc`的协议
 class SwiftClass: SessionDelegate { }
-let clz = SwiftClass()
-clz is NSObjectProtocol.Type
+let object = SwiftClass()
 
 //: [Next](@next)

@@ -51,7 +51,7 @@ extension Stack: Container {
     var count: Int { container.count }
 }
 
-//: `Sequence`是Swift标准库中的一个协议，数组、字符串等容器类型都符合该协议。
+//: `Sequence`是Swift标准库中的一个协议，数组、字符串等容器类型都符合该协议，`Sequence`有一个关联类型`Element`。
 //: 扩展`Stack`，添加一个方法使其能够将`Sequence`中所有元素`push`进栈
 extension Stack {
 //    mutating func pushAll<S: Sequence>(_ items: S) {
@@ -68,6 +68,17 @@ var stack = Stack<NSObject>()
 let arr = ["abc" as NSString, "miao" as NSString]
 stack.pushAll(arr)
 print(stack)
+
+//: 但需要注意，拥有关联类型的协议不能作为类型声明使用，只能作为类型约束使用。
+//: 以下代码会出现编译错误：
+var container: Container
+func getContainer(_ container: Container) -> Container {
+    return container
+}
+//: 以下代码能正常运行：
+func getContainer<T: Container>(_ container: T) -> T {
+    return container
+}
 
 // #-end-editable-code
 
