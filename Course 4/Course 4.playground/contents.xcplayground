@@ -14,5 +14,8 @@
         <page name='4.1 关联类型'/>
         <page name='4.2 Objective-C协议'/>
         <page name='4.3 协议扩展'/>
+        <page name='4.4 协议扩展的使用'/>
+        <page name='4.5 不透明类型'/>
+        <page name='4.6 常用协议'/>
     </pages>
 </playground>

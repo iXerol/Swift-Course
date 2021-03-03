@@ -12,6 +12,7 @@ struct Stack<Element>: CustomStringConvertible {
         print("current items: \(container)")
     }
 
+    @discardableResult
     mutating func pop() -> Element? {
         let last = container.popLast()
         print("current items: \(container)")

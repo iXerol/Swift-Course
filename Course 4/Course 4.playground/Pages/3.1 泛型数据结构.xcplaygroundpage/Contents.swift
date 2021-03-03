@@ -18,12 +18,13 @@ struct Stack<Element> {
 
     mutating func push(_ newItem: Element) {
         container.append(newItem)
-        debugPrint("current items: \(container)")
+        print("current items: \(container)")
     }
 
+    @discardableResult
     mutating func pop() -> Element? {
         let last = container.popLast()
-        debugPrint("current items: \(container)")
+        print("current items: \(container)")
         return last
     }
 }
