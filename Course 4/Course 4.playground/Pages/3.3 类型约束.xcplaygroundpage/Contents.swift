@@ -22,21 +22,25 @@ sum(of: 0.1, 2.2, 3.3)
 //: 也可以为扩展添加类型约束，比如为3.1节实现的`Stack`添加合并栈顶两元素为两元素之和的方法。
 //: 这需要元素类型满足`AdditiveArithmetic`，即为可相加的数值类型。使用`where`子句添加元素类型的约束。
 extension Stack where Element: AdditiveArithmetic {
-    mutating func mergeTopTwo() {
-        guard let top1 = self.pop() else {
+    mutating func mergeTop(_ k: Int = 2) {
+        guard k > 0 else {
             return
         }
-        guard let top2 = self.pop() else {
-            self.push(top1)
-            return
+        var sum: Element = .zero
+        for _ in 0..<k {
+            guard let item = self.pop() else {
+                self.push(sum)
+                return
+            }
+            sum += item
         }
-        self.push(top1 + top2)
+        self.push(sum)
     }
 }
-var intStack = Stack<Int>([1, 2, 3])
-intStack.mergeTopTwo()
-var stringStack = Stack<String>(["1", "2", "3"])
-stringStack.mergeTopTwo()
+var intStack = Stack([1, 2, 3])
+intStack.mergeTop(2)
+var stringStack = Stack(["1", "2", "3"])
+stringStack.mergeTop(2)
 //: 同样都是`Stack`的实例，元素为`Int` `Double`等可相加数值类型可以正常调用该扩展中的方法；但元素为`String`等其他类型就会产生编译错误，不可使用这些方法。
 
 //: [Next](@next)

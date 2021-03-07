@@ -36,4 +36,18 @@ class SessionController: SessionDelegate {
 
 //: #### 4.3.2 带`where`子句的协议扩展
 
+//: 与泛型类型一样，有关联类型的协议也能使用`where`子句进行类型约束的扩展。
+//: 比如可以为所有满足`Sequence`协议的容器添加求和方法，但要求其元素可相加。
+extension Sequence where Element: AdditiveArithmetic {
+    func sum() -> Element {
+        return reduce(.zero, +)
+    }
+}
+let arr = [1, 2, 3, 22, 33, 22, 33]
+arr.sum()
+let set = Set(arr)
+set.sum()
+let range = 1...10
+range.sum()
+
 //: [Next](@next)
