@@ -1,6 +1,8 @@
 //: [Previous](@previous)
 
 import SwiftUI
+import PlaygroundSupport
+
 //: ### 4.5 不透明类型
 
 //: 4.1节提到，「拥有关联类型的协议不能作为类型声明使用，只能作为类型约束使用」。
@@ -15,12 +17,23 @@ struct TextView: View {
 }
 //: 而是像这样：
 struct MyView: View {
+    @State var text = "Swift"
     var body: some View {
-        Text("Swift")
+        VStack {
+            Text(text)
+            Button("👍🏻") {
+                text += "👍🏻"
+            }
+        }
     }
 }
 
+let view = MyView()
+PlaygroundPage.current.setLiveView(view)
+print(type(of: view.body))
+
 //: 因为对于`SwiftUI`的渲染系统而言，并不关心`body`实际是什么类型，拥有什么类型的特性，只需要是符合`View`协议的实例即可。
+//: 而且对于`SwiftUI`来说，`body`的实际类型可能十分复杂，对于开发者来说没有暴露的必要。
 //: 这种不向外暴露实际类型，只根据其符合的协议来描述返回值的特性被称为不透明类型（Opaque Type），语法是在返回值的协议类型前加`some`。
 
 //: 不透明类型只能作为返回值的声明，而不能在变量声明、参数声明时使用。
