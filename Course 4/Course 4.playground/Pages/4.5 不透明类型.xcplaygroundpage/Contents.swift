@@ -17,7 +17,7 @@ struct TextView: View {
 }
 //: 而是像这样：
 struct MyView: View {
-    @State var text = "Swift"
+    @State private var text = "Swift"
     var body: some View {
         VStack {
             Text(text)
