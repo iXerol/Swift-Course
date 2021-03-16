@@ -1,5 +1,5 @@
 //: [Previous](@previous)
-// #-hidden-code
+//#-hidden-code
 import Foundation
 
 struct Stack<Element>: CustomStringConvertible {
@@ -24,8 +24,8 @@ struct Stack<Element>: CustomStringConvertible {
     }
 }
 
-// #-end-hidden-code
-// #-editable-code
+//#-end-hidden-code
+//#-editable-code
 //: ## 4 协议进阶
 //: ### 4.1 关联类型
 
@@ -81,6 +81,6 @@ func getContainer<T: Container>(_ container: T) -> T {
     return container
 }
 
-// #-end-editable-code
+//#-end-editable-code
 
 //: [Next](@next)
