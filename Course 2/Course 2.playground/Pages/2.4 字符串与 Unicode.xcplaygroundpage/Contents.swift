@@ -33,11 +33,11 @@ print(unified == separated) // true
 for scalar in unicodeString.unicodeScalars {
     print(scalar, scalar.properties.name!)
 }
-//: 在Unicode中还存在多个Unicode标量表示一个字符，或多种不同的标量等价表示同一字符的情况。查Unicode字符表可知，「 ゙」（`\u{3099}`）的意义为「COMBINING KATAKANA-HIRAGANA VOICED SOUND MARK」，也就是与前一个假名组合使用表示浊音的标记，在上例中与「ヒ」（`\u{30D2}`）组合后与「ビ」(`\u{30D3}`)应当同样表示相同意义的一个字符。同理「 ́」（`\u{301}`）与前一个字母组合表示尖音，因此与「e」（`\u{65}`）组合后与「é」（`\u{E9}`）等价。在emoji中，组合的情况十分普遍，比如上例中的东亚女程序员emoji字符是由四个Unicode标量组成的，分别表示女性、东亚人种修饰符、不表义的零宽连字符、计算机。
+//: 在Unicode中还存在多个Unicode标量表示一个字符，或多种不同的标量等价表示同一字符的情况。查Unicode字符表可知，「 ゙」（`\u{3099}`）的意义为「COMBINING KATAKANA-HIRAGANA VOICED SOUND MARK」，也就是与前一个假名组合使用表示浊音的标记，在上例中与「ヒ」（`\u{30D2}`）组合后与「ビ」(`\u{30D3}`)应当为表示相同意义的同一个字符。同理「 ́」（`\u{301}`）与前一个字母组合表示尖音，因此与「e」（`\u{65}`）组合后与「é」（`\u{E9}`）等价。在emoji中，组合的情况十分普遍，比如上例中的东亚女程序员emoji字符是由四个Unicode标量组成的，分别表示女性、东亚人种修饰符、不表义的零宽连字符、计算机。
 
 //: 综上所述，在Unicode中一个字符可以由多个Unicode标量组成，一个Unicode标量所需要的基本编码单元数量又是不一定的。Swift对Unicode的这两项特性做了完整的兼容，这也导致了Swift中每个字符所占用的内存不等，无法使用字符位置在O(1)时间内得到对应字符。而且仅依靠数值也无法简单使用数值表示具体的意义（表示第几个字符？还是第几个Unicode标量？或是第几个UTF-8基本单元？），因此Swift也使用[`UTF8View`](https://developer.apple.com/documentation/swift/unicode/scalar/utf8view)、[`UTF16View`](https://developer.apple.com/documentation/swift/unicode/scalar/utf16view)类型来分别表示对应编码下的表现形式，使开发者也可以使用使用数值索引访问UTF-8、UTF-16编码下对应位置的值。
 
-//: References: [`String`文档](https://developer.apple.com/documentation/swift/string)，[Swift Language Guide字符串章节](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)，[Unicode文档](https://www.unicode.org/versions/Unicode10.0.0/ch03.pdf)
+//: References: [`String`文档](https://developer.apple.com/documentation/swift/string)，[Swift Language Guide字符串章节](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)，[Unicode文档](https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf)
 //#-end-editable-code
 
 //: [Next](@next)
